@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* 文字間を広げる */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+h1 a {
+    color: #6a0dad; /* 色を変更 */
+    text-decoration: none;
+}
+
+.current-month {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.month-navigation, .next-year-navigation {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; /* ボタンが重ならないようにする */
+}
+
+.month-navigation button, .next-year-navigation button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.month-navigation button:hover, .next-year-navigation button:hover {
+    background-color: #005bb5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 4px; /* スペースを減らす */
+    text-align: left; /* 左寄せ */
+    vertical-align: top;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center; /* 見出しは中央揃え */
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea.memo {
+    height: 50px; /* メモ用の高さを小さくする */
+    margin-bottom: 5px;
+}
+
+textarea.memo2 {
+    height: 50px; /* メモ2用の高さを小さくする */
+    margin-bottom: 5px;
+}
+
+.memo-section {
+    margin-top: 20px;
+}
+
+textarea#memo {
+    height: 100px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.file-upload {
+    margin-top: 20px;
+}
+
+#fileInput {
+    display: block;
+    margin-top: 10px;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.drop-area.dragover {
+    border-color: #0073e6;
+    background-color: #f0f8ff;
+}
+
+.file-list {
+    margin-top: 20px;
+}
+
+.file-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}

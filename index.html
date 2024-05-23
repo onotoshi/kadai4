@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メモ帳アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://select-type.com/my/rsv/cal/" target="_blank">予約システム (select-type.com)</a></h1>
+        <div id="currentMonth" class="current-month"></div>
+        <div class="month-navigation">
+            <button onclick="generateCalendar(2024, 6)">2024年6月</button>
+            <button onclick="generateCalendar(2024, 7)">2024年7月</button>
+            <button onclick="generateCalendar(2024, 8)">2024年8月</button>
+            <button onclick="generateCalendar(2024, 9)">2024年9月</button>
+            <button onclick="generateCalendar(2024, 10)">2024年10月</button>
+            <button onclick="generateCalendar(2024, 11)">2024年11月</button>
+            <button onclick="generateCalendar(2024, 12)">2024年12月</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>日付</th>
+                    <th>メモ</th>
+                    <th>メモ2</th>
+                </tr>
+            </thead>
+            <tbody id="calendarBody">
+                <!-- JavaScriptで生成される日付 -->
+            </tbody>
+        </table>
+
+        <div class="memo-section">
+            <h2>メモ帳アプリ</h2>
+            <button onclick="promptPassword()">クリア</button>
+        </div>
+
+        <div class="file-upload">
+            <label for="fileInput">ここに画像やファイルが挿入できるように</label>
+            <input type="file" id="fileInput">
+            <div id="dropArea" class="drop-area">
+                <p>ここにファイルをドラッグ＆ドロップ</p>
+            </div>
+            <div id="fileList" class="file-list"></div>
+        </div>
+
+        <div class="past-memos">
+            <h2>過去のメモ</h2>
+            <div id="pastMemosContainer"></div>
+        </div>
+
+        <div class="next-year-navigation">
+            <h2>来年のメモ</h2>
+            <button onclick="generateCalendar(2025, 1)">2025年1月</button>
+            <button onclick="generateCalendar(2025, 2)">2025年2月</button>
+            <button onclick="generateCalendar(2025, 3)">2025年3月</button>
+            <button onclick="generateCalendar(2025, 4)">2025年4月</button>
+            <button onclick="generateCalendar(2025, 5)">2025年5月</button>
+            <button onclick="generateCalendar(2025, 6)">2025年6月</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
